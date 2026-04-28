@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 const stats = [
-  { value: 3.85, suffix: "", label: "GPA / 4.00", decimals: 2 },
+  { value: 3.89, suffix: "", label: "GPA / 4.00", decimals: 2 },
   { value: 88, suffix: "%", label: "Exit Exam Score", decimals: 0 },
   { value: 4, suffix: " yrs", label: "Years of Excellence", decimals: 0 },
 ];

@@ -22,7 +22,7 @@ export default function Education() {
                   <p className="text-gray-400 text-xs sm:text-sm">College of Business and Economics · Woldia, Ethiopia</p>
                 </div>
                 <div className="flex-shrink-0 text-center px-5 py-3 sm:px-6 sm:py-4 rounded-2xl bg-[#F5C518] shadow-sm self-start">
-                  <div className="text-xl sm:text-2xl font-black text-[#1a1a1a]">3.85</div>
+                  <div className="text-xl sm:text-2xl font-black text-[#1a1a1a]">3.89</div>
                   <div className="text-xs text-[#1a1a1a]/60 mt-0.5">GPA / 4.00</div>
                 </div>
               </div>

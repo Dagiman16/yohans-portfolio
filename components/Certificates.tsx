@@ -4,9 +4,9 @@ import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 
 const awards = [
-  { icon: "🥇", title: "Gold Medal Award", issuer: "Woldia University", year: "2026", accent: "bg-[#F5C518]", image: "/cert1.jpg" },
-  { icon: "🎓", title: "BA in Management", issuer: "Woldia University", year: "2026", accent: "bg-gray-100", image: "/cert2.jpg" },
-  { icon: "📊", title: "Exit Exam Top Scorer", issuer: "Ethiopian Higher Education", year: "2026", accent: "bg-gray-100", image: "/cert3.jpg" },
+  { icon: "🥇", title: "Gold Medal Award", issuer: "Woldia University", year: "2026", accent: "bg-[#F5C518]", image: "/medal.jpg", btnLabel: "👁 View" },
+  { icon: "🎓", title: "BA in Management", issuer: "Woldia University", year: "2026", accent: "bg-gray-100", image: "/tempo.jpg", btnLabel: "📄 View Certificate" },
+  { icon: "📊", title: "Exit Exam Top Scorer", issuer: "Ethiopian Higher Education", year: "2026", accent: "bg-gray-100", image: "/exit .jpg", btnLabel: "📄 View Certificate" },
   { icon: "🏅", title: "ESHE & EthioCoders Certificate", issuer: "ESHE · EthioCoders", year: "2026", accent: "bg-gray-100", pdf: "/Abrham Demse......pdf" },
 ];
 
@@ -38,7 +38,7 @@ export default function Certificates() {
                   onClick={() => setModalImg(a.image!)}
                   className="mt-auto inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-[#1a1a1a] text-white text-xs font-bold hover:bg-[#333] transition-colors"
                 >
-                  📄 View Certificate
+                  {(a as {btnLabel?: string}).btnLabel ?? "📄 View Certificate"}
                 </button>
               ) : (
                 <a
