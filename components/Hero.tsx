@@ -1,8 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
-const roles = ["Management Professional", "Gold Medalist 🥇", "NGO & Banking Ready", "Graduated with Distinction"];
+const roles = ["Political Science Professional", "Gold Medalist 🥇", "NGO & Public Policy Ready", "Graduated with Distinction"];
 
 export default function Hero() {
   const [idx, setIdx] = useState(0);
@@ -38,27 +37,24 @@ export default function Hero() {
 
           {/* Avatar */}
           <div className="flex justify-center md:order-2 md:justify-end">
-            <div className="w-36 h-36 sm:w-52 sm:h-52 md:w-72 md:h-72 rounded-full bg-[#F5C518] border-4 border-white shadow-xl overflow-hidden relative flex-shrink-0">
-              <Image
-                src="/abrham.jpg"
-                alt="Abrham Demse"
-                fill
-                className="object-cover object-top"
-                priority
+            <div className="w-36 h-36 sm:w-52 sm:h-52 md:w-72 md:h-72 rounded-full bg-[#F5C518] border-4 border-white shadow-xl overflow-hidden flex-shrink-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/fasik.JPG"
+                alt="Fasikaw Getachew"
+                className="w-full h-full object-cover object-top"
               />
             </div>
           </div>
 
           {/* Text */}
           <div className="md:order-1 w-full text-center md:text-left">
-            <p className="text-xs font-semibold text-[#F5C518] uppercase tracking-widest mb-3 break-words">
-              BA Management · Woldia University · Class of 2026
-            </p>
+
 
             <h1 className="text-2xl sm:text-4xl md:text-5xl font-black text-[#1a1a1a] leading-tight mb-4 break-words">
               Hello, I am{" "}
               <span className="relative inline-block">
-                Abrham Demse
+                Fasikaw Getachew
                 <span className="absolute -bottom-1 left-0 right-0 h-2 bg-[#F5C518]/40 -z-10 rounded" />
               </span>
             </h1>
@@ -70,8 +66,8 @@ export default function Hero() {
             </div>
 
             <p className="text-gray-500 leading-relaxed mb-8 text-sm max-w-xs sm:max-w-sm mx-auto md:mx-0">
-              Gold Medalist and top Exit Exam scorer seeking impactful roles
-              in NGOs, banking, and administration.
+              Gold Medalist seeking impactful roles
+              in governance, public policy, and international relations.
             </p>
 
             <div className="flex flex-wrap gap-3 justify-center md:justify-start">
@@ -82,7 +78,7 @@ export default function Hero() {
                 Hire Me
               </a>
               <a
-                href="/abcv.pdf"
+                href="/cv/FASIKAW GETACHEW.pdf"
                 download
                 className="px-5 py-2.5 rounded-full font-bold text-[#1a1a1a] border-2 border-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors text-sm"
               >

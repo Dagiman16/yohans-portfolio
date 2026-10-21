@@ -1,12 +1,11 @@
 "use client";
-import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 
 const strengths = [
-  { icon: "🧠", title: "Analytical Thinker", desc: "Data-driven decisions backed by strategic management training" },
-  { icon: "🤝", title: "Natural Leader", desc: "Proven ability to coordinate teams and drive results" },
-  { icon: "💬", title: "Clear Communicator", desc: "Strong written and verbal skills in English and Amharic" },
-  { icon: "🎯", title: "Highly Disciplined", desc: "Consistent top performer throughout 4 years of study" },
+  { icon: "🧠", title: "Analytical Thinker", desc: "Ability to analyze political issues and evaluate public policies critically" },
+  { icon: "🏛️", title: "Governance Expert", desc: "Strong foundation in political theory, democracy, and public administration" },
+  { icon: "💬", title: "Clear Communicator", desc: "Strong research, communication, and problem-solving skills" },
+  { icon: "🎯", title: "Highly Disciplined", desc: "Gold Medal graduate committed to continuous learning and professional growth" },
 ];
 
 export default function About() {
@@ -26,17 +25,18 @@ export default function About() {
         >
           {/* Bio */}
           <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-gray-100 max-w-3xl mx-auto text-center">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#F5C518] overflow-hidden relative mx-auto mb-5 border-4 border-white shadow-md">
-              <Image src="/abrham.jpg" alt="Abrham Demse" fill className="object-cover object-top" />
+            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#F5C518] overflow-hidden mx-auto mb-5 border-4 border-white shadow-md">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/fasik.JPG" alt="Fasikaw Getachew" className="w-full h-full object-cover object-top" />
             </div>
             <p className="text-gray-600 leading-relaxed text-sm sm:text-base mb-4">
-              I am a Management graduate from <span className="font-bold text-[#1a1a1a]">Woldia University</span>, honored with the <span className="font-bold text-[#1a1a1a]">Gold Medal</span> for graduating with distinction in recognition of outstanding academic performance and dedication. My academic journey equipped me with a strong foundation in organizational behavior, human resource management, strategic planning, leadership, marketing, and financial management. Through these studies, I developed the ability to analyze business challenges, make informed decisions, and create practical solutions that improve organizational performance.
+              My name is <span className="font-bold text-[#1a1a1a]">Fasikaw Getachew</span>, a Political Science graduate from <span className="font-bold text-[#1a1a1a]">Woldia University</span>, honored with the <span className="font-bold text-[#1a1a1a]">Gold Medal</span> for graduating with distinction in recognition of outstanding academic performance and dedication. My academic journey equipped me with a strong foundation in political theory, governance, public policy, international relations, political institutions, democracy, and public administration. Through these studies, I developed the ability to analyze political issues, evaluate public policies, understand governance systems, and contribute to informed decision-making and sustainable social development.
             </p>
             <p className="text-gray-600 leading-relaxed text-sm sm:text-base mb-4">
-              I am highly motivated, detail-oriented, and committed to continuous learning and professional growth. I possess strong communication, teamwork, problem-solving, and time-management skills, enabling me to adapt effectively in dynamic work environments. I am passionate about contributing to organizations through efficient management practices, ethical leadership, and innovative thinking.
+              I am highly motivated, analytical, and committed to continuous learning and professional growth. I possess strong research, critical-thinking, communication, teamwork, and problem-solving skills, enabling me to understand complex political issues and work effectively in diverse environments. I am passionate about promoting good governance, democratic values, social justice, and public service while contributing to evidence-based policymaking, institutional development, and positive societal change.
             </p>
             <blockquote className="border-l-4 border-[#F5C518] pl-4 italic text-gray-400 text-xs sm:text-sm text-left">
-              &quot;My goal is to create measurable impact from day one by improving productivity, supporting team success, and helping organizations achieve their strategic objectives while maintaining integrity and excellence.&quot;
+              &quot;My goal is to promote good governance, democratic values, and social justice — contributing to evidence-based policymaking, institutional development, and positive societal change.&quot;
             </blockquote>
           </div>
 
@@ -55,7 +55,7 @@ export default function About() {
           <div className="text-center">
             <p className="text-xs text-gray-400 uppercase tracking-wider mb-3">Open to opportunities in</p>
             <div className="flex flex-wrap gap-2 justify-center">
-              {["NGO / Development", "Banking & Finance", "Administration", "HR & People Ops", "Project Coordination"].map((f) => (
+              {["Government & Public Policy", "NGO / Development", "International Relations", "Public Administration", "Research & Analysis"].map((f) => (
                 <span key={f} className="px-3 py-1.5 rounded-full text-xs font-semibold bg-[#F5C518]/20 text-[#1a1a1a] border border-[#F5C518]/40">
                   {f}
                 </span>

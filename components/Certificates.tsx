@@ -1,84 +1,83 @@
 "use client";
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
-import Image from "next/image";
 
-const awards = [
-  { icon: "🥇", title: "Gold Medal Award", issuer: "Woldia University", year: "2026", accent: "bg-[#F5C518]", image: "/medal.jpg", btnLabel: "👁 View" },
-  { icon: "🎓", title: "BA in Management", issuer: "Woldia University", year: "2026", accent: "bg-gray-100", image: "/tempo.jpg", btnLabel: "📄 View Certificate" },
-  { icon: "📊", title: "Exit Exam Top Scorer", issuer: "Ethiopian Higher Education", year: "2026", accent: "bg-gray-100", image: "/exit .jpg", btnLabel: "📄 View Certificate" },
-  { icon: "🏅", title: "ESHE & EthioCoders Certificate", issuer: "ESHE · EthioCoders", year: "2026", accent: "bg-gray-100", pdf: "/Abrham Demse......pdf" },
+const certificates = [
+  { icon: "🎓", title: "BA in Political Science", issuer: "Woldia University", year: "2025", pdf: "/degree/dgree.pdf" },
+  { icon: "🏅", title: "Certificate", issuer: "Certification Body", year: "2025", pdf: "/certificates/Certificate (3).pdf" },
+  { icon: "💻", title: "Ethio Coders Certificate", issuer: "Ethio Coders", year: "2025", pdf: "/ethio_coder/Ethio_Coder .pdf" },
 ];
 
 export default function Certificates() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [modalImg, setModalImg] = useState<string | null>(null);
+  const [open, setOpen] = useState(false);
 
   return (
     <section id="certificates" className="stripe-bg py-14 sm:py-24 px-4 sm:px-6">
-      <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-8 sm:mb-12">
+      <div className="max-w-5xl mx-auto text-center">
+        <div className="mb-8 sm:mb-12">
           <p className="text-xs font-semibold text-[#F5C518] uppercase tracking-widest mb-2">Credentials</p>
           <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a]">Awards & Certificates</h2>
         </div>
 
         <div
           ref={ref}
-          className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+          className={`transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
-          {awards.map((a) => (
-            <div key={a.title} className={`card-hover rounded-3xl p-5 sm:p-6 ${a.accent} border border-gray-100 shadow-sm flex flex-col`}>
-              <div className="text-3xl sm:text-4xl mb-3">{a.icon}</div>
-              <h3 className="font-black text-sm sm:text-base text-[#1a1a1a] mb-1">{a.title}</h3>
-              <p className="text-gray-500 text-xs sm:text-sm">{a.issuer}</p>
-              <p className="text-gray-400 text-xs mt-1 mb-4">{a.year}</p>
-
-              {"image" in a ? (
-                <button
-                  onClick={() => setModalImg(a.image!)}
-                  className="mt-auto inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-[#1a1a1a] text-white text-xs font-bold hover:bg-[#333] transition-colors"
-                >
-                  {(a as {btnLabel?: string}).btnLabel ?? "📄 View Certificate"}
-                </button>
-              ) : (
-                <a
-                  href={a.pdf}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-auto inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-[#1a1a1a] text-white text-xs font-bold hover:bg-[#333] transition-colors"
-                >
-                  📄 View Certificate
-                </a>
-              )}
-            </div>
-          ))}
+          <p className="text-gray-500 text-sm mb-8">
+            {certificates.length} credentials from academic institutions and professional training programs.
+          </p>
+          <button
+            onClick={() => setOpen(true)}
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#F5C518] text-[#1a1a1a] font-black text-sm hover:bg-[#E6B800] transition-colors shadow-sm"
+          >
+            📄 View All Certificates
+          </button>
         </div>
       </div>
 
       {/* Modal */}
-      {modalImg && (
+      {open && (
         <div
-          className="fixed inset-0 z-[100] bg-black/80 flex items-center justify-center p-3 sm:p-6"
-          onClick={() => setModalImg(null)}
+          className="fixed inset-0 z-[100] bg-black/70 flex items-center justify-center p-4"
+          onClick={() => setOpen(false)}
         >
           <div
-            className="relative w-full max-w-2xl max-h-[92vh] bg-white rounded-2xl overflow-hidden shadow-2xl"
+            className="relative w-full max-w-2xl max-h-[90vh] bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
-            <button
-              onClick={() => setModalImg(null)}
-              className="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-[#1a1a1a] text-white flex items-center justify-center text-sm font-bold hover:bg-[#444] transition-colors"
-            >
-              ✕
-            </button>
-            <div className="overflow-y-auto max-h-[92vh]">
-              <Image
-                src={modalImg}
-                alt="Certificate"
-                width={800}
-                height={1100}
-                className="w-full h-auto"
-              />
+            {/* Header */}
+            <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100">
+              <h3 className="font-black text-lg text-[#1a1a1a]">All Certificates</h3>
+              <button
+                onClick={() => setOpen(false)}
+                className="w-9 h-9 rounded-full bg-[#1a1a1a] text-white flex items-center justify-center text-sm font-bold hover:bg-[#444] transition-colors"
+              >
+                ✕
+              </button>
+            </div>
+
+            {/* List */}
+            <div className="overflow-y-auto divide-y divide-gray-100">
+              {certificates.map((c) => (
+                <div key={c.title} className="flex items-center justify-between gap-4 px-6 py-4 hover:bg-gray-50 transition-colors">
+                  <div className="flex items-center gap-3">
+                    <span className="text-2xl">{c.icon}</span>
+                    <div className="text-left">
+                      <p className="font-bold text-sm text-[#1a1a1a]">{c.title}</p>
+                      <p className="text-xs text-gray-400">{c.issuer} · {c.year}</p>
+                    </div>
+                  </div>
+                  <a
+                    href={c.pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 px-4 py-2 rounded-xl bg-[#1a1a1a] text-white text-xs font-bold hover:bg-[#333] transition-colors"
+                  >
+                    View
+                  </a>
+                </div>
+              ))}
             </div>
           </div>
         </div>

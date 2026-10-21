@@ -2,20 +2,20 @@
 import { useInView } from "react-intersection-observer";
 
 const skills = [
-  { name: "Leadership & Management", level: 92 },
+  { name: "Political Analysis", level: 92 },
+  { name: "Public Policy Evaluation", level: 90 },
+  { name: "Research & Report Writing", level: 88 },
+  { name: "Governance & Public Administration", level: 90 },
+  { name: "International Relations", level: 85 },
   { name: "Communication", level: 90 },
-  { name: "Teamwork & Collaboration", level: 95 },
-  { name: "Report Writing", level: 88 },
-  { name: "Project Coordination", level: 82 },
   { name: "Microsoft Office Suite", level: 85 },
-  { name: "Data Entry & Analysis", level: 80 },
-  { name: "Time Management", level: 90 },
+  { name: "Teamwork & Collaboration", level: 95 },
 ];
 
 const soft = [
   "Critical Thinking", "Decision Making", "Conflict Resolution",
   "Adaptability", "Ethical Leadership", "Attention to Detail",
-  "Customer Focus", "Presentation Skills",
+  "Social Justice Advocacy", "Presentation Skills",
 ];
 
 export default function Skills() {

@@ -26,7 +26,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <a href="#hero" className="font-black text-xl text-[#1a1a1a] tracking-tight flex-shrink-0">
-          A<span className="text-[#F5C518]">.</span>Demse
+          F<span className="text-[#F5C518]">.</span>Getachew
         </a>
 
         {/* Desktop nav */}
@@ -42,22 +42,15 @@ export default function Navbar() {
 
         {/* Desktop Download CV */}
         <a
-          href="/abcv.pdf"
+          href="/cv/FASIKAW GETACHEW.pdf"
           download
           className="hidden md:inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full text-sm font-bold text-[#1a1a1a] bg-[#F5C518] hover:bg-[#E6B800] transition-colors"
         >
           ⬇ Download CV
         </a>
 
-        {/* Mobile right side: Download CV + Hamburger */}
-        <div className="flex md:hidden items-center gap-2">
-          <a
-            href="/abcv.pdf"
-            download
-            className="px-3 py-2 rounded-full text-xs font-bold text-[#1a1a1a] bg-[#F5C518] hover:bg-[#E6B800] transition-colors whitespace-nowrap"
-          >
-            ⬇ CV
-          </a>
+        {/* Mobile right side: Hamburger only */}
+        <div className="flex md:hidden items-center">
           <button
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
@@ -94,7 +87,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="/abcv.pdf"
+              href="/cv/FASIKAW GETACHEW.pdf"
               download
               className="mt-2 py-3 text-center rounded-xl text-sm font-bold bg-[#F5C518] text-[#1a1a1a] hover:bg-[#E6B800] transition-colors"
             >

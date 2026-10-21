@@ -3,8 +3,8 @@ import { useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 const stats = [
-  { value: 3.89, suffix: "", label: "GPA / 4.00", decimals: 2 },
-  { value: 88, suffix: "%", label: "Exit Exam Score", decimals: 0 },
+  { value: 3.84, suffix: "", label: "GPA / 4.00", decimals: 2 },
+  { value: 79, suffix: "%", label: "Exit Exam Score", decimals: 0 },
   { value: 4, suffix: " yrs", label: "Years of Excellence", decimals: 0 },
 ];
 
@@ -61,8 +61,7 @@ export default function Achievements() {
           <div>
             <h3 className="text-xl sm:text-2xl font-black text-[#1a1a1a] mb-2">Gold Medal — Woldia University</h3>
             <p className="text-[#1a1a1a]/70 leading-relaxed text-sm sm:text-base max-w-2xl">
-              Awarded for graduating with distinction. Achieved the highest Exit Exam score in the
-              entire graduating batch — a record that signals discipline, intelligence, and consistency.
+              Awarded for graduating with distinction — a record that signals discipline, intelligence, and consistency.
             </p>
           </div>
         </div>

@@ -2,9 +2,9 @@
 import { useInView } from "react-intersection-observer";
 
 const contacts = [
-  { icon: "📧", label: "Email", value: "Abrhamdemse50@gmail.com", href: "mailto:Abrhamdemse50@gmail.com" },
-  { icon: "📱", label: "Phone", value: "+251 92 586 9923", href: "tel:+251925869923" },
-  { icon: "✈️", label: "Telegram", value: "@abrishe1KING", href: "https://t.me/abrishe1KING" },
+  { icon: "📧", label: "Email", value: "getachewfasikaw26@gmail.com", href: "mailto:getachewfasikaw26@gmail.com" },
+  { icon: "📱", label: "Phone", value: "+251 92 464 2333", href: "tel:+251924642333" },
+  { icon: "✈️", label: "Telegram", value: "@Fa3323", href: "https://t.me/Fa3323" },
 ];
 
 export default function Contact() {
@@ -44,7 +44,7 @@ export default function Contact() {
 
         <div className="flex justify-center pb-16">
           <a
-            href="/abcv.pdf"
+            href="/cv/FASIKAW GETACHEW.pdf"
             download
             className="px-8 py-3 rounded-full font-bold text-[#1a1a1a] bg-[#F5C518] hover:bg-[#E6B800] transition-colors text-sm text-center"
           >
