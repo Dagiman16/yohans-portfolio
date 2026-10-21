@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Fasikaw Getachew | Gold Medalist Political Science Graduate",
+  title: "Demeke Fasikaw Getachew | Gold Medalist Political Science and International Relations Graduate",
   description:
-    "Top-performing Political Science Graduate from Woldia University. GPA 3.89, Gold Medal Award. Seeking governance, public policy, and NGO opportunities.",
-  keywords: "Fasikaw Getachew, political science graduate, Woldia University, gold medal, NGO jobs, governance, Ethiopia",
+    "Top-performing Political Science and International Relations Graduate from Woldia University. GPA 3.84, Gold Medal Award. Seeking governance, public policy, and NGO opportunities.",
+  keywords: "Demeke Fasikaw Getachew, political science international relations graduate, Woldia University, gold medal, NGO jobs, governance, Ethiopia",
   icons: {
     icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23F5C518'/><text y='.9em' font-size='70' font-family='Arial Black,sans-serif' font-weight='900' x='50%' text-anchor='middle' dominant-baseline='hanging' fill='%231a1a1a'>F</text></svg>",
   },

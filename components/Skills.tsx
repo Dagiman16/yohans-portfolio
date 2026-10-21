@@ -72,6 +72,7 @@ export default function Skills() {
               {[
                 { name: "Amharic", level: "Native", pct: 100 },
                 { name: "English", level: "Professional", pct: 85 },
+                { name: "Arabic", level: "Basic", pct: 30 },
               ].map((l) => (
                 <div key={l.name} className="mb-4">
                   <div className="flex justify-between mb-1.5">

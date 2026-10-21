@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 const certificates = [
-  { icon: "🎓", title: "BA in Political Science", issuer: "Woldia University", year: "2025", pdf: "/degree/dgree.pdf" },
+  { icon: "🎓", title: "BA in Political Science and International Relations", issuer: "Woldia University", year: "2025", pdf: "/degree/dgree.pdf" },
   { icon: "🏅", title: "Certificate", issuer: "Certification Body", year: "2025", pdf: "/certificates/Certificate (3).pdf" },
   { icon: "💻", title: "Ethio Coders Certificate", issuer: "Ethio Coders", year: "2025", pdf: "/ethio_coder/Ethio_Coder .pdf" },
 ];

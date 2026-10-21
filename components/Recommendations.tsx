@@ -4,10 +4,10 @@ import { useInView } from "react-intersection-observer";
 const letters = [
   {
     ref: "",
-    date: "23/03/2026",
+    date: "23/03/2025",
     title: "Letter of Recommendation",
     from: "Woldia University",
-    role: "Political Science Department",
+    role: "Political Science and International Relations Department",
     institution: "Woldia University",
     pdf: "/recommendations/Recomendation letter.pdf",
     highlights: [
@@ -16,7 +16,7 @@ const letters = [
       "Excellent time management & leadership",
       "Highly recommended for any position",
     ],
-    quote: "I believe Fasikaw is destined to be an expert in Political Science and related fields, and therefore is an excellent candidate for your esteemed organization.",
+    quote: "I believe Fasikaw is destined to be an expert in Political Science and International Relations, and therefore is an excellent candidate for your esteemed organization.",
   },
 ];
 

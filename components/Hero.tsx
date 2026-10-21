@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const roles = ["Political Science Professional", "Gold Medalist 🥇", "NGO & Public Policy Ready", "Graduated with Distinction"];
+const roles = ["Political Science & Int'l Relations", "Gold Medalist 🥇", "NGO & Public Policy Ready", "Graduated with Distinction"];
 
 export default function Hero() {
   const [idx, setIdx] = useState(0);
@@ -54,7 +54,7 @@ export default function Hero() {
             <h1 className="text-2xl sm:text-4xl md:text-5xl font-black text-[#1a1a1a] leading-tight mb-4 break-words">
               Hello, I am{" "}
               <span className="relative inline-block">
-                Fasikaw Getachew
+                Demeke Fasikaw Getachew
                 <span className="absolute -bottom-1 left-0 right-0 h-2 bg-[#F5C518]/40 -z-10 rounded" />
               </span>
             </h1>
@@ -66,7 +66,7 @@ export default function Hero() {
             </div>
 
             <p className="text-gray-500 leading-relaxed mb-8 text-sm max-w-xs sm:max-w-sm mx-auto md:mx-0">
-              Gold Medalist seeking impactful roles
+              BA in Political Science and International Relations — Gold Medalist seeking impactful roles
               in governance, public policy, and international relations.
             </p>
 

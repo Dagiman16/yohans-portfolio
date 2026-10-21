@@ -23,7 +23,7 @@ export default function Home() {
         <Contact />
       </main>
       <footer className="bg-[#F5C518] py-6 px-4 text-center text-xs sm:text-sm font-semibold text-[#1a1a1a]">
-        © 2026 Fasikaw Getachew · Political Science Graduate · Woldia University
+        © 2025 Demeke Fasikaw Getachew · Political Science & International Relations · Woldia University
       </footer>
     </div>
   );

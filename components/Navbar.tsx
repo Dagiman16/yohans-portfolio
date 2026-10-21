@@ -26,7 +26,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <a href="#hero" className="font-black text-xl text-[#1a1a1a] tracking-tight flex-shrink-0">
-          F<span className="text-[#F5C518]">.</span>Getachew
+          D<span className="text-[#F5C518]">.</span>Fasikaw
         </a>
 
         {/* Desktop nav */}
