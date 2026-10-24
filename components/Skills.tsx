@@ -2,20 +2,20 @@
 import { useInView } from "react-intersection-observer";
 
 const skills = [
-  { name: "Political Analysis", level: 92 },
-  { name: "Public Policy Evaluation", level: 90 },
-  { name: "Research & Report Writing", level: 88 },
-  { name: "Governance & Public Administration", level: 90 },
-  { name: "International Relations", level: 85 },
-  { name: "Communication", level: 90 },
-  { name: "Microsoft Office Suite", level: 85 },
+  { name: "Legal Research & Case Analysis", level: 92 },
+  { name: "Legal Writing & Documentation", level: 90 },
+  { name: "Statutory Interpretation", level: 88 },
+  { name: "Constitutional & Human Rights Law", level: 90 },
+  { name: "Legal Reasoning & Argumentation", level: 88 },
+  { name: "Contract Review Fundamentals", level: 82 },
+  { name: "Communication & Report Writing", level: 90 },
   { name: "Teamwork & Collaboration", level: 95 },
 ];
 
 const soft = [
-  "Critical Thinking", "Decision Making", "Conflict Resolution",
-  "Adaptability", "Ethical Leadership", "Attention to Detail",
-  "Social Justice Advocacy", "Presentation Skills",
+  "Critical Thinking", "Ethical Decision-Making", "Conflict Resolution",
+  "Attention to Detail", "Negotiation", "Problem-Solving",
+  "Time Management", "Presentation Skills",
 ];
 
 export default function Skills() {
@@ -25,7 +25,7 @@ export default function Skills() {
     <section id="skills" className="stripe-bg py-16 sm:py-24 px-4 sm:px-6">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-10 sm:mb-12">
-          <p className="text-xs font-semibold text-[#F5C518] uppercase tracking-widest mb-2">Capabilities</p>
+          <p className="text-xs font-semibold text-[#F5C518] uppercase tracking-widest mb-2">Professional Capabilities</p>
           <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a]">Skills</h2>
         </div>
 
@@ -72,7 +72,6 @@ export default function Skills() {
               {[
                 { name: "Amharic", level: "Native", pct: 100 },
                 { name: "English", level: "Professional", pct: 85 },
-                { name: "Arabic", level: "Basic", pct: 30 },
               ].map((l) => (
                 <div key={l.name} className="mb-4">
                   <div className="flex justify-between mb-1.5">

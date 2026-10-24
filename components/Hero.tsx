@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const roles = ["Political Science & Int'l Relations", "Gold Medalist 🥇", "NGO & Public Policy Ready", "Graduated with Distinction"];
+const roles = ["Law Graduate ⚖️", "Gold Medalist 🥇", "Legal Research & Advocacy", "Graduated with Distinction"];
 
 export default function Hero() {
   const [idx, setIdx] = useState(0);
@@ -41,7 +41,7 @@ export default function Hero() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/fasik.JPG"
-                alt="Fasikaw Getachew"
+                alt="Yohans Alebachew"
                 className="w-full h-full object-cover object-top"
               />
             </div>
@@ -54,7 +54,7 @@ export default function Hero() {
             <h1 className="text-2xl sm:text-4xl md:text-5xl font-black text-[#1a1a1a] leading-tight mb-4 break-words">
               Hello, I am{" "}
               <span className="relative inline-block">
-                Demeke Fasikaw Getachew
+                Yohans Alebachew
                 <span className="absolute -bottom-1 left-0 right-0 h-2 bg-[#F5C518]/40 -z-10 rounded" />
               </span>
             </h1>
@@ -66,8 +66,7 @@ export default function Hero() {
             </div>
 
             <p className="text-gray-500 leading-relaxed mb-8 text-sm max-w-xs sm:max-w-sm mx-auto md:mx-0">
-              BA in Political Science and International Relations — Gold Medalist seeking impactful roles
-              in governance, public policy, and international relations.
+              LL.B. Law Graduate — Gold Medalist seeking impactful roles in legal research, justice administration, and human rights advocacy.
             </p>
 
             <div className="flex flex-wrap gap-3 justify-center md:justify-start">
@@ -78,7 +77,7 @@ export default function Hero() {
                 Hire Me
               </a>
               <a
-                href="/cv/FASIKAW GETACHEW.pdf"
+                href="/cv/Yohans Alebachew Professional CV Resume A4.pdf"
                 download
                 className="px-5 py-2.5 rounded-full font-bold text-[#1a1a1a] border-2 border-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors text-sm"
               >

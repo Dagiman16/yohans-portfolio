@@ -3,9 +3,9 @@ import { useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 const stats = [
-  { value: 3.84, suffix: "", label: "GPA / 4.00", decimals: 2 },
-  { value: 79, suffix: "%", label: "Exit Exam Score", decimals: 0 },
-  { value: 4, suffix: " yrs", label: "Years of Excellence", decimals: 0 },
+  { value: 3.84, suffix: "", label: "CGPA / 4.00", decimals: 2 },
+  { value: 82, suffix: "%", label: "Exit Exam Score", decimals: 0 },
+  { value: 5, suffix: " yrs", label: "Years of Excellence", decimals: 0 },
 ];
 
 function Counter({ target, decimals, suffix }: { target: number; decimals: number; suffix: string }) {
@@ -37,7 +37,7 @@ export default function Achievements() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-8 sm:mb-12">
           <p className="text-xs font-semibold text-[#F5C518] uppercase tracking-widest mb-2">Academic Record</p>
-          <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a]">Proven Excellence</h2>
+          <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a]">Academic Excellence</h2>
         </div>
 
         {/* Animated counters */}
@@ -55,16 +55,7 @@ export default function Achievements() {
           ))}
         </div>
 
-        {/* Gold Medal spotlight */}
-        <div className="rounded-3xl bg-[#F5C518] p-6 sm:p-8 md:p-10 flex flex-col md:flex-row items-center gap-5 sm:gap-8 text-center md:text-left">
-          <div className="text-5xl sm:text-7xl medal-pulse flex-shrink-0">🥇</div>
-          <div>
-            <h3 className="text-xl sm:text-2xl font-black text-[#1a1a1a] mb-2">Gold Medal — Woldia University</h3>
-            <p className="text-[#1a1a1a]/70 leading-relaxed text-sm sm:text-base max-w-2xl">
-              Awarded for graduating with distinction — a record that signals discipline, intelligence, and consistency.
-            </p>
-          </div>
-        </div>
+
       </div>
     </section>
   );

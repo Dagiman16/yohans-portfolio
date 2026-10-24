@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Demeke Fasikaw Getachew | Gold Medalist Political Science and International Relations Graduate",
+  title: "Yohans Alebachew | Gold Medalist Law Graduate",
   description:
-    "Top-performing Political Science and International Relations Graduate from Woldia University. GPA 3.84, Gold Medal Award. Seeking governance, public policy, and NGO opportunities.",
-  keywords: "Demeke Fasikaw Getachew, political science international relations graduate, Woldia University, gold medal, NGO jobs, governance, Ethiopia",
+    "Top-performing Law Graduate from Woldia University. GPA 3.84, Gold Medal Award. Seeking opportunities in legal research, justice administration, and human rights advocacy.",
+  keywords: "Yohans Alebachew, law graduate, LLB, Woldia University, gold medal, legal research, human rights, Ethiopia",
   icons: {
-    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23F5C518'/><text y='.9em' font-size='70' font-family='Arial Black,sans-serif' font-weight='900' x='50%' text-anchor='middle' dominant-baseline='hanging' fill='%231a1a1a'>F</text></svg>",
+    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23F5C518'/><text y='.9em' font-size='70' font-family='Arial Black,sans-serif' font-weight='900' x='50%' text-anchor='middle' dominant-baseline='hanging' fill='%231a1a1a'>Y</text></svg>",
   },
 };
 

@@ -2,9 +2,9 @@
 import { useInView } from "react-intersection-observer";
 
 const contacts = [
-  { icon: "📧", label: "Email", value: "getachewfasikaw26@gmail.com", href: "mailto:getachewfasikaw26@gmail.com" },
-  { icon: "📱", label: "Phone", value: "+251 92 464 2333", href: "tel:+251924642333" },
-  { icon: "✈️", label: "Telegram", value: "@Fa3323", href: "https://t.me/Fa3323" },
+  { icon: "📧", label: "Email", value: "yohansaleba@gmail.com", href: "mailto:yohansaleba@gmail.com" },
+  { icon: "📱", label: "Phone", value: "+251 92 288 9499", href: "tel:+251922889499" },
+  { icon: "✈️", label: "Telegram", value: "@Johnyohans", href: "https://t.me/Johnyohans" },
 ];
 
 export default function Contact() {
@@ -19,7 +19,7 @@ export default function Contact() {
           <p className="text-xs font-semibold text-[#F5C518] uppercase tracking-widest mb-2">Let&apos;s Connect</p>
           <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a]">Get in Touch</h2>
           <p className="text-gray-500 mt-3 max-w-md mx-auto text-sm sm:text-base">
-            Ready to contribute from day one.
+            Open to entry-level legal roles, internships, and research opportunities.
           </p>
         </div>
 
@@ -44,7 +44,7 @@ export default function Contact() {
 
         <div className="flex justify-center pb-16">
           <a
-            href="/cv/FASIKAW GETACHEW.pdf"
+            href="/cv/Yohans Alebachew Professional CV Resume A4.pdf"
             download
             className="px-8 py-3 rounded-full font-bold text-[#1a1a1a] bg-[#F5C518] hover:bg-[#E6B800] transition-colors text-sm text-center"
           >

@@ -26,7 +26,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <a href="#hero" className="font-black text-xl text-[#1a1a1a] tracking-tight flex-shrink-0">
-          D<span className="text-[#F5C518]">.</span>Fasikaw
+          Y<span className="text-[#F5C518]">.</span>Alebachew
         </a>
 
         {/* Desktop nav */}
@@ -42,7 +42,7 @@ export default function Navbar() {
 
         {/* Desktop Download CV */}
         <a
-          href="/cv/FASIKAW GETACHEW.pdf"
+          href="/cv/Yohans Alebachew Professional CV Resume A4.pdf"
           download
           className="hidden md:inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full text-sm font-bold text-[#1a1a1a] bg-[#F5C518] hover:bg-[#E6B800] transition-colors"
         >
@@ -87,7 +87,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="/cv/FASIKAW GETACHEW.pdf"
+              href="/cv/Yohans Alebachew Professional CV Resume A4.pdf"
               download
               className="mt-2 py-3 text-center rounded-xl text-sm font-bold bg-[#F5C518] text-[#1a1a1a] hover:bg-[#E6B800] transition-colors"
             >
